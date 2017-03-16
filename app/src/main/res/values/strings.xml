@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Gitify</string>
+    <string name="recent">Recents</string>
+    <string name="favorite">Favorites</string>
+    <string name="my_repositories">My Repositories</string>
+    <string name="search_username_repository">Search username, repositories,etc…</string>
+    <string name="usernames">Usernames</string>
+    <string name="repositories">Repositories</string>
+
+    <!--transition names-->
+    <string name="search_transition_name">search</string>
+
+    <string name="num_repositories">%s Repositories</string>
+    <string name="repo_by">- by %s</string>
+    <string name="score">Score : %s</string>
+    <string name="total_count">Total : %s</string>
+    <string name="showing_for_query">Showing <b>%s</b> results for <b>\"%s\"</b></string>
+    <string name="count_num">Count : %s</string>
+    <string name="login_user"><b>Login : </b> %s</string>
+
+    <string name="view_all">View all</string>
+    <string name="no_results">No results</string>
+
+    <string name="enter_login">Enter login id</string>
+    <string name="change_login">Change login</string>
+
+    <string name="no_results_found">No results found</string>
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="home">Home</string>
+    <string name="header">Header</string>
+    <string name="sub_header">Sub-header</string>
+    <string name="mark_as_favorite">Mark as favorite</string>
+</resources>

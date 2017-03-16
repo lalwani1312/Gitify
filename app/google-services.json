@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "557951844808",
+    "firebase_url": "https://gitify-b492c.firebaseio.com",
+    "project_id": "gitify-b492c",
+    "storage_bucket": "gitify-b492c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557951844808:android:af882e9f19f6bef9",
+        "android_client_info": {
+          "package_name": "com.codefather.gitify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557951844808-tv9d9oceepipude0pr5r6abrkh06nuk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiv9KHmm-V7GNvp7VNbOkvEB6GQNzCovM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

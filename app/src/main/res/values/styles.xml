@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseAppTheme" />
+
+    <style name="SearchViewStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/textColorSecondaryLight</item>
+        <item name="android:layout_margin">@dimen/dimen_8dp</item>
+        <item name="android:background">@drawable/search_view_bg</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart" tools:ignore="NewApi">@dimen/dimen_8dp</item>
+        <item name="android:paddingLeft">@dimen/dimen_8dp</item>
+        <item name="android:paddingRight">@dimen/dimen_8dp</item>
+        <item name="android:paddingEnd" tools:ignore="NewApi">@dimen/dimen_8dp</item>
+    </style>
+
+</resources>

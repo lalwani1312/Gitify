@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textColorPrimaryDark">#FFFFFFFF</color>
+    <color name="textColorSecondaryDark">#B3FFFFFF</color>
+    <color name="textColorDisabledDark">#80FFFFFF</color>
+    <color name="dividerColorDark">#1EFFFFFF</color>
+
+    <color name="textColorPrimaryLight">#DE000000</color>
+    <color name="textColorSecondaryLight">#8A000000</color>
+    <color name="textColorDisabledLight">#61000000</color>
+    <color name="dividerColorLight">#1E000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="recycler_view_background">#F6F6F6</color>
+</resources>

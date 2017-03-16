@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/action_bar_size"
+    android:layout_marginTop="@dimen/action_bar_size"
+    android:animateLayoutChanges="true"
+    tools:context="com.codefather.gitify.profile.MyRepositoryFragment">
+
+    <EditText
+        android:id="@+id/et_login"
+        style="@style/SearchViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:hint="@string/enter_login"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:padding="@dimen/dimen_16dp"
+        android:textSize="@dimen/dimen_24dp"
+        tools:ignore="SpUsage" />
+
+    <RelativeLayout
+        android:id="@+id/rl_repo_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_change_login_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/single_list_item_height"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingStart="@dimen/dimen_16dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tv_login"
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:text="@string/login_user" />
+
+            <Button
+                android:id="@+id/b_change_login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackground"
+                android:paddingEnd="@dimen/dimen_16dp"
+                android:paddingLeft="@dimen/dimen_16dp"
+                android:paddingRight="@dimen/dimen_16dp"
+                android:paddingStart="@dimen/dimen_16dp"
+                android:text="@string/change_login"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/repo_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_change_login_container" />
+
+        <include
+            android:id="@+id/tv_no_results_found"
+            layout="@layout/no_results_layout"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.DeviceDefault.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_integrated_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/recycler_view_background">
+
+    <LinearLayout
+        android:id="@+id/ll_search_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_size"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ib_home"
+            android:layout_width="@dimen/action_bar_size"
+            android:layout_height="@dimen/action_bar_size"
+            android:background="?selectableItemBackground"
+            android:contentDescription="@string/home"
+            android:src="@drawable/ic_arrow_back" />
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/SearchViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/search_username_repository"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:transitionName="@string/search_transition_name"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_search_container">
+
+        <include layout="@layout/fragment_search_cards" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
